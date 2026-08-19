@@ -79,20 +79,20 @@ Deployment sonrasi ana sayfa, gorev listesi, yeni gorev ekleme, duzenleme, silme
 
 ## Teslim Kontrol Listesi
 
-- [ ] React projesi calisiyor
-- [ ] CSS framework kullaniliyor
-- [ ] Components klasoru var
-- [ ] Pages klasoru var
-- [ ] Interfaces klasoru var
-- [ ] Ekleme islemi calisiyor
-- [ ] Listeleme islemi calisiyor
-- [ ] Guncelleme islemi calisiyor
-- [ ] Silme islemi calisiyor
-- [ ] LocalStorage calisiyor
-- [ ] Responsive tasarim mevcut
-- [ ] GitHub repository public
-- [ ] README.md mevcut
-- [ ] En az bir ekran goruntusu hazir
-- [ ] Netlify deployment calisiyor
-- [ ] Live demo linki calisiyor
-- [ ] npm run build hatasiz calisiyor
+- [X] React projesi calisiyor
+- [X] CSS framework kullaniliyor
+- [X] Components klasoru var
+- [X] Pages klasoru var
+- [X] Interfaces klasoru var
+- [X] Ekleme islemi calisiyor
+- [X] Listeleme islemi calisiyor
+- [X] Guncelleme islemi calisiyor
+- [X] Silme islemi calisiyor
+- [X] LocalStorage calisiyor
+- [X] Responsive tasarim mevcut
+- [X] GitHub repository public
+- [X] README.md mevcut
+- [X] En az bir ekran goruntusu hazir
+- [X] Netlify deployment calisiyor
+- [X] Live demo linki calisiyor
+- [X] npm run build hatasiz calisiyor
