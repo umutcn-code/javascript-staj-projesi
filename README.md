@@ -45,11 +45,7 @@ npm run build
 
 ## Ekran Goruntusu
 
-Proje ekran goruntusu bu bolume eklenecektir.
-
-```text
-docs/screenshot.png
-```
+![TaskFlow Ekran Goruntusu](docs/screenshot.png)
 
 ## GitHub Linki
 
