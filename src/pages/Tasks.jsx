@@ -24,7 +24,7 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
 
     const isDeleted = onDeleteTask(taskToDelete.id);
     setPageMessage(
-      isDeleted ? "Görev silindi." : "Silinmek istenen görev bulunamadi."
+      isDeleted ? "Görev silindi." : "Silinmek istenen görev bulunamadı."
     );
     setTaskToDelete(null);
   }

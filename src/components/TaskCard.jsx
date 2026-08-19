@@ -29,7 +29,7 @@ export default function TaskCard({ task, onDeleteClick, onToggleStatus }) {
 
           <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs font-medium text-slate-500">
             <span>Son tarih: {task.dueDate || "Belirtilmedi"}</span>
-            <span>Olusturma: {new Date(task.createdAt).toLocaleDateString("tr-TR")}</span>
+            <span>Oluşturma: {new Date(task.createdAt).toLocaleDateString("tr-TR")}</span>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ export default function TaskCard({ task, onDeleteClick, onToggleStatus }) {
             to={`/tasks/edit/${task.id}`}
             className="focus-ring rounded-md border border-blue-200 px-3 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-50"
           >
-            Duzenle
+            Düzenle
           </Link>
           <button
             type="button"

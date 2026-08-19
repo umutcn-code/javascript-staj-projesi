@@ -12,14 +12,14 @@ export default function NewTask({ onAddTask }) {
   return (
     <div className="space-y-5">
       <div>
-        <p className="text-sm font-semibold text-blue-700">Yeni Kayit</p>
-        <h1 className="mt-1 text-2xl font-bold text-slate-950">Gorev Ekle</h1>
+        <p className="text-sm font-semibold text-blue-700">Yeni Kayıt</p>
+        <h1 className="mt-1 text-2xl font-bold text-slate-950">Görev Ekle</h1>
         <p className="mt-2 text-sm leading-6 text-slate-500">
-          Zorunlu alanlari doldurarak yeni bir gorev olustur.
+          Zorunlu alanları doldurarak yeni bir görev oluştur.
         </p>
       </div>
 
-      <TaskForm submitLabel="Gorevi Kaydet" onSubmit={handleSubmit} />
+      <TaskForm submitLabel="Görevi Kaydet" onSubmit={handleSubmit} />
     </div>
   );
 }

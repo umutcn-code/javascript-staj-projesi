@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const navigationItems = [
   { to: "/", label: "Dashboard", description: "Genel durum" },
-  { to: "/tasks", label: "Gorevler", description: "Listele ve yonet" },
-  { to: "/tasks/new", label: "Yeni Gorev", description: "Kayit olustur" },
+  { to: "/tasks", label: "Görevler", description: "Listele ve yönet" },
+  { to: "/tasks/new", label: "Yeni Görev", description: "Kayıt oluştur" },
 ];
 
 export default function Sidebar() {

@@ -15,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     const isSaved = saveTasksToStorage(tasks);
-    setStorageError(isSaved ? "" : "Veriler tarayici hafizasina kaydedilemedi.");
+    setStorageError(isSaved ? "" : "Veriler tarayıcı hafızasına kaydedilemedi.");
   }, [tasks]);
 
   function addTask(taskData) {

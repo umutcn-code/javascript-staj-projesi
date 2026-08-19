@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const navigationItems = [
   { to: "/", label: "Dashboard" },
-  { to: "/tasks", label: "Gorevler" },
-  { to: "/tasks/new", label: "Yeni Gorev" },
+  { to: "/tasks", label: "Görevler" },
+  { to: "/tasks/new", label: "Yeni Görev" },
 ];
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
           </span>
           <div>
             <p className="text-base font-bold text-slate-950">TaskFlow</p>
-            <p className="hidden text-xs text-slate-500 sm:block">Gorev takip paneli</p>
+            <p className="hidden text-xs text-slate-500 sm:block">Görev takip paneli</p>
           </div>
         </NavLink>
 

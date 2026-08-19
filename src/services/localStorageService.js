@@ -11,7 +11,7 @@ export function getTasksFromStorage() {
     const parsedTasks = JSON.parse(storedTasks);
     return Array.isArray(parsedTasks) ? parsedTasks : [];
   } catch (error) {
-    console.error("LocalStorage verisi okunamadi:", error);
+    console.error("LocalStorage verisi okunamadı:", error);
     return [];
   }
 }

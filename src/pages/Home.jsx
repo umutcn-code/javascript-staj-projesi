@@ -15,11 +15,11 @@ export default function Home({ tasks }) {
           <div>
             <p className="text-sm font-semibold text-blue-200">TaskFlow Dashboard</p>
             <h1 className="mt-2 text-2xl font-bold tracking-normal sm:text-3xl">
-              Gorevlerini tek panelden takip et.
+              Görevlerini tek panelden takip et.
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300">
-              Toplam gorev durumunu, son eklenen kayitlari ve tamamlanma bilgisini burada
-              gorebilirsin.
+              Toplam görev durumunu, son eklenen kayıtları ve tamamlanma bilgisini burada
+              görebilirsin.
             </p>
           </div>
 
@@ -27,13 +27,13 @@ export default function Home({ tasks }) {
             to="/tasks/new"
             className="focus-ring inline-flex w-full justify-center rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-400 sm:w-auto"
           >
-            Yeni Gorev Ekle
+            Yeni Görev Ekle
           </Link>
         </div>
       </section>
 
       <section className="grid gap-4 md:grid-cols-3">
-        <StatCard label="Toplam Kayit" value={stats.totalCount} tone="blue" />
+        <StatCard label="Toplam Kayıt" value={stats.totalCount} tone="blue" />
         <StatCard label="Tamamlanan" value={stats.completedCount} tone="emerald" />
         <StatCard label="Bekleyen" value={stats.pendingCount} tone="amber" />
       </section>
@@ -41,20 +41,20 @@ export default function Home({ tasks }) {
       <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-lg font-bold text-slate-950">Son Eklenen Gorevler</h2>
-            <p className="mt-1 text-sm text-slate-500">En yeni kayitlar burada listelenir.</p>
+            <h2 className="text-lg font-bold text-slate-950">Son Eklenen Görevler</h2>
+            <p className="mt-1 text-sm text-slate-500">En yeni kayıtlar burada listelenir.</p>
           </div>
           <Link to="/tasks" className="text-sm font-semibold text-blue-700 hover:text-blue-800">
-            Tumunu gor
+            Tümünü gör
           </Link>
         </div>
 
         <div className="mt-5">
           {recentTasks.length === 0 ? (
             <EmptyState
-              title="Henuz gorev yok"
-              description="Ilk gorevini ekleyerek dashboard alanini doldurabilirsin."
-              actionLabel="Gorev Ekle"
+              title="Henüz görev yok"
+              description="İlk görevini ekleyerek dashboard alanını doldurabilirsin."
+              actionLabel="Görev Ekle"
               actionTo="/tasks/new"
             />
           ) : (

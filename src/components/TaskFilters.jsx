@@ -6,7 +6,7 @@ export default function TaskFilters({ searchTerm, statusFilter, onSearchChange, 
         <input
           value={searchTerm}
           onChange={(event) => onSearchChange(event.target.value)}
-          placeholder="Baslik veya aciklama ara"
+          placeholder="Başlık veya açıklama ara"
           className="focus-ring w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 transition placeholder:text-slate-400 focus:border-blue-500"
         />
       </label>
@@ -18,7 +18,7 @@ export default function TaskFilters({ searchTerm, statusFilter, onSearchChange, 
           onChange={(event) => onStatusChange(event.target.value)}
           className="focus-ring w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 transition focus:border-blue-500"
         >
-          <option value="all">Tumu</option>
+          <option value="all">Tümü</option>
           <option value="pending">Bekleyen</option>
           <option value="completed">Tamamlanan</option>
         </select>

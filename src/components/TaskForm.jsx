@@ -25,15 +25,15 @@ export default function TaskForm({ initialTask = EMPTY_TASK, submitLabel, onSubm
     const nextErrors = {};
 
     if (!formData.title.trim()) {
-      nextErrors.title = "Baslik alani zorunludur.";
+      nextErrors.title = "Başlık alanı zorunludur.";
     }
 
     if (!formData.description.trim()) {
-      nextErrors.description = "Aciklama alani zorunludur.";
+      nextErrors.description = "Açıklama alanı zorunludur.";
     }
 
     if (!formData.dueDate) {
-      nextErrors.dueDate = "Son tarih secilmelidir.";
+      nextErrors.dueDate = "Son tarih seçilmelidir.";
     }
 
     setErrors(nextErrors);
@@ -58,25 +58,25 @@ export default function TaskForm({ initialTask = EMPTY_TASK, submitLabel, onSubm
     <form onSubmit={handleSubmit} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <div className="grid gap-5">
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-slate-700">Baslik</span>
+          <span className="mb-1 block text-sm font-semibold text-slate-700">Başlık</span>
           <input
             name="title"
             value={formData.title}
             onChange={handleChange}
-            placeholder="Orn: Proje README dosyasini hazirla"
+            placeholder="Örn: Proje README dosyasını hazırla"
             className="focus-ring w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 transition placeholder:text-slate-400 focus:border-blue-500"
           />
           {errors.title && <span className="mt-1 block text-xs text-rose-600">{errors.title}</span>}
         </label>
 
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-slate-700">Aciklama</span>
+          <span className="mb-1 block text-sm font-semibold text-slate-700">Açıklama</span>
           <textarea
             name="description"
             value={formData.description}
             onChange={handleChange}
             rows="4"
-            placeholder="Gorevin detaylarini yazin"
+            placeholder="Görevin detaylarını yazın"
             className="focus-ring w-full resize-y rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 transition placeholder:text-slate-400 focus:border-blue-500"
           />
           {errors.description && (
@@ -86,16 +86,16 @@ export default function TaskForm({ initialTask = EMPTY_TASK, submitLabel, onSubm
 
         <div className="grid gap-4 md:grid-cols-3">
           <label className="block">
-            <span className="mb-1 block text-sm font-semibold text-slate-700">Oncelik</span>
+            <span className="mb-1 block text-sm font-semibold text-slate-700">Öncelik</span>
             <select
               name="priority"
               value={formData.priority}
               onChange={handleChange}
               className="focus-ring w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 transition focus:border-blue-500"
             >
-              <option value="low">Dusuk</option>
+              <option value="low">Düşük</option>
               <option value="medium">Orta</option>
-              <option value="high">Yuksek</option>
+              <option value="high">Yüksek</option>
             </select>
           </label>
 
@@ -108,7 +108,7 @@ export default function TaskForm({ initialTask = EMPTY_TASK, submitLabel, onSubm
               className="focus-ring w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 transition focus:border-blue-500"
             >
               <option value="pending">Bekliyor</option>
-              <option value="completed">Tamamlandi</option>
+              <option value="completed">Tamamlandı</option>
             </select>
           </label>
 
@@ -134,7 +134,7 @@ export default function TaskForm({ initialTask = EMPTY_TASK, submitLabel, onSubm
           onClick={() => navigate("/tasks")}
           className="focus-ring rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
         >
-          Iptal
+          İptal
         </button>
         <button
           type="submit"

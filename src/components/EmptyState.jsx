@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 export default function EmptyState({
-  title = "Kayit bulunamadi",
-  description = "Listeye uygun bir gorev yok.",
+  title = "Kayıt bulunamadı",
+  description = "Listeye uygun bir görev yok.",
   actionLabel,
   actionTo,
 }) {

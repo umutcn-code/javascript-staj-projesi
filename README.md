@@ -1,8 +1,8 @@
 # TaskFlow
 
-TaskFlow, React ve LocalStorage kullanilarak hazirlanmis modern bir gorev takip uygulamasidir. Proje, staj veya egitim teslimi icin CRUD islemlerini, routing yapisini ve responsive arayuzu gosterecek sekilde tasarlanmistir.
+TaskFlow, React ve LocalStorage kullanılarak hazırlanmış modern bir görev takip uygulamasıdır. Proje, staj veya eğitim teslimi için CRUD işlemlerini, routing yapısını ve responsive arayüzü gösterecek şekilde tasarlanmıştır.
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 
 - React
 - Vite
@@ -11,19 +11,19 @@ TaskFlow, React ve LocalStorage kullanilarak hazirlanmis modern bir gorev takip 
 - React Router DOM
 - LocalStorage
 
-## Ozellikler
+## Özellikler
 
 - Dashboard istatistikleri
-- Gorev ekleme
-- Gorev listeleme
-- Gorev duzenleme
-- Gorev silme
-- Durum degistirme
+- Görev ekleme
+- Görev listeleme
+- Görev düzenleme
+- Görev silme
+- Durum değiştirme
 - Arama
 - Filtreleme
-- LocalStorage ile kalici veri
-- Bos liste ve hata durumlari
-- Responsive tasarim
+- LocalStorage ile kalıcı veri
+- Boş liste ve hata durumları
+- Responsive tasarım
 
 ## Kurulum
 
@@ -31,7 +31,7 @@ TaskFlow, React ve LocalStorage kullanilarak hazirlanmis modern bir gorev takip 
 npm install
 ```
 
-## Calistirma
+## Çalıştırma
 
 ```bash
 npm run dev
@@ -43,9 +43,9 @@ npm run dev
 npm run build
 ```
 
-## Ekran Goruntusu
+## Ekran Görüntüsü
 
-![TaskFlow Ekran Goruntusu](docs/screenshot.png)
+![TaskFlow Ekran Görüntüsü](docs/screenshot.png)
 
 ## GitHub Linki
 
@@ -55,7 +55,7 @@ https://github.com/umutcn-code/javascript-staj-projesi
 
 https://enchanting-faloodeh-4e7139.netlify.app
 
-## GitHub'a Yukleme Adimlari
+## GitHub'a Yükleme Adımları
 
 ```bash
 git init
@@ -68,31 +68,31 @@ git push -u origin main
 
 ## Netlify Deployment
 
-1. Netlify hesabina gir.
-2. Add new site > Import an existing project sec.
-3. GitHub repository baglantisini sec.
-4. Build command alanina `npm run build` yaz.
-5. Publish directory alanina `dist` yaz.
+1. Netlify hesabına gir.
+2. Add new site > Import an existing project seç.
+3. GitHub repository bağlantısını seç.
+4. Build command alanına `npm run build` yaz.
+5. Publish directory alanına `dist` yaz.
 6. Deploy butonuna bas.
 
-Deployment sonrasi ana sayfa, gorev listesi, yeni gorev ekleme, duzenleme, silme ve sayfa yenileme sonrasi LocalStorage kontrol edilmelidir.
+Deployment sonrası ana sayfa, görev listesi, yeni görev ekleme, düzenleme, silme ve sayfa yenileme sonrası LocalStorage kontrol edilmelidir.
 
 ## Teslim Kontrol Listesi
 
-- [X] React projesi calisiyor
-- [X] CSS framework kullaniliyor
-- [X] Components klasoru var
-- [X] Pages klasoru var
-- [X] Interfaces klasoru var
-- [X] Ekleme islemi calisiyor
-- [X] Listeleme islemi calisiyor
-- [X] Guncelleme islemi calisiyor
-- [X] Silme islemi calisiyor
-- [X] LocalStorage calisiyor
-- [X] Responsive tasarim mevcut
+- [X] React projesi çalışıyor
+- [X] CSS framework kullanılıyor
+- [X] Components klasörü var
+- [X] Pages klasörü var
+- [X] Interfaces klasörü var
+- [X] Ekleme işlemi çalışıyor
+- [X] Listeleme işlemi çalışıyor
+- [X] Güncelleme işlemi çalışıyor
+- [X] Silme işlemi çalışıyor
+- [X] LocalStorage çalışıyor
+- [X] Responsive tasarım mevcut
 - [X] GitHub repository public
 - [X] README.md mevcut
-- [X] En az bir ekran goruntusu hazir
-- [X] Netlify deployment calisiyor
-- [X] Live demo linki calisiyor
-- [X] npm run build hatasiz calisiyor
+- [X] En az bir ekran görüntüsü hazır
+- [X] Netlify deployment çalışıyor
+- [X] Live demo linki çalışıyor
+- [X] npm run build hatasız çalışıyor

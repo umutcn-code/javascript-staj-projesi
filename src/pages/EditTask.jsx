@@ -14,7 +14,7 @@ export default function EditTask({ tasks, onUpdateTask }) {
     const isUpdated = onUpdateTask(id, taskData);
 
     if (!isUpdated) {
-      setErrorMessage("Guncellenmek istenen gorev bulunamadi.");
+      setErrorMessage("Güncellenmek istenen görev bulunamadı.");
       return;
     }
 
@@ -24,9 +24,9 @@ export default function EditTask({ tasks, onUpdateTask }) {
   if (!task) {
     return (
       <EmptyState
-        title="Gorev bulunamadi"
-        description="Duzenlemek istedigin gorev silinmis veya gecersiz bir baglanti kullanilmis olabilir."
-        actionLabel="Gorevlere Don"
+        title="Görev bulunamadı"
+        description="Düzenlemek istediğin görev silinmiş veya geçersiz bir bağlantı kullanılmış olabilir."
+        actionLabel="Görevlere Dön"
         actionTo="/tasks"
       />
     );
@@ -36,15 +36,15 @@ export default function EditTask({ tasks, onUpdateTask }) {
     <div className="space-y-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm font-semibold text-blue-700">Kayit Duzenleme</p>
-          <h1 className="mt-1 text-2xl font-bold text-slate-950">Gorevi Duzenle</h1>
+          <p className="text-sm font-semibold text-blue-700">Kayıt Düzenleme</p>
+          <h1 className="mt-1 text-2xl font-bold text-slate-950">Görevi Düzenle</h1>
           <p className="mt-2 text-sm leading-6 text-slate-500">
-            Form mevcut bilgilerle dolduruldu. Degisiklikleri kaydedebilirsin.
+            Form mevcut bilgilerle dolduruldu. Değişiklikleri kaydedebilirsin.
           </p>
         </div>
 
         <Link to="/tasks" className="text-sm font-semibold text-blue-700 hover:text-blue-800">
-          Gorevlere don
+          Görevlere dön
         </Link>
       </div>
 
@@ -54,7 +54,7 @@ export default function EditTask({ tasks, onUpdateTask }) {
         </div>
       )}
 
-      <TaskForm initialTask={task} submitLabel="Degisiklikleri Kaydet" onSubmit={handleSubmit} />
+      <TaskForm initialTask={task} submitLabel="Değişiklikleri Kaydet" onSubmit={handleSubmit} />
     </div>
   );
 }

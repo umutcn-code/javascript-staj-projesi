@@ -1,12 +1,12 @@
 export const TASK_PRIORITIES = {
-  low: "Dusuk",
+  low: "Düşük",
   medium: "Orta",
-  high: "Yuksek",
+  high: "Yüksek",
 };
 
 export const TASK_STATUSES = {
   pending: "Bekliyor",
-  completed: "Tamamlandi",
+  completed: "Tamamlandı",
 };
 
 export const EMPTY_TASK = {
