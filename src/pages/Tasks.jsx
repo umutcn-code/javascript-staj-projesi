@@ -24,7 +24,7 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
 
     const isDeleted = onDeleteTask(taskToDelete.id);
     setPageMessage(
-      isDeleted ? "Gorev silindi." : "Silinmek istenen gorev bulunamadi."
+      isDeleted ? "Görev silindi." : "Silinmek istenen görev bulunamadi."
     );
     setTaskToDelete(null);
   }
@@ -32,7 +32,7 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
   function handleToggleStatus(taskId) {
     const isUpdated = onToggleTaskStatus(taskId);
     setPageMessage(
-      isUpdated ? "Gorev durumu guncellendi." : "Guncellenecek gorev bulunamadi."
+      isUpdated ? "Görev durumu güncellendi." : "Güncellenecek görev bulunamadı."
     );
   }
 
@@ -40,10 +40,10 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
     <div className="space-y-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm font-semibold text-blue-700">Gorev Yonetimi</p>
-          <h1 className="mt-1 text-2xl font-bold text-slate-950">Gorevler</h1>
+          <p className="text-sm font-semibold text-blue-700">Görev Yönetimi</p>
+          <h1 className="mt-1 text-2xl font-bold text-slate-950">Görevler</h1>
           <p className="mt-2 text-sm leading-6 text-slate-500">
-            Kayitlari ara, filtrele, duzenle, sil veya durumunu degistir.
+            Kayıtları ara, filtrele, düzenle, sil veya durumunu değiştir.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
           to="/tasks/new"
           className="focus-ring inline-flex justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
         >
-          Yeni Gorev
+          Yeni Görev
         </Link>
       </div>
 
@@ -70,15 +70,15 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
 
       {tasks.length === 0 ? (
         <EmptyState
-          title="Henuz kayit yok"
-          description="Listeleme, duzenleme ve silme islemlerini denemek icin yeni bir gorev ekleyin."
-          actionLabel="Ilk Gorevi Ekle"
+          title="Henüz kayıt yok"
+          description="Listeleme, düzenleme ve silme işlemlerini denemek için yeni bir görev ekleyin."
+          actionLabel="İlk Görevi Ekle"
           actionTo="/tasks/new"
         />
       ) : filteredTasks.length === 0 ? (
         <EmptyState
-          title="Sonuc bulunamadi"
-          description="Arama kelimesini veya durum filtresini degistirerek tekrar deneyin."
+          title="Sonuç bulunamadı"
+          description="Arama kelimesini veya durum filtresini değiştirerek tekrar deneyin."
         />
       ) : (
         <TaskList
@@ -90,10 +90,10 @@ export default function Tasks({ tasks, onDeleteTask, onToggleTaskStatus }) {
 
       <ConfirmModal
         isOpen={Boolean(taskToDelete)}
-        title="Gorev silinsin mi?"
+        title="Görev silinsin mi?"
         description={`"${
-          taskToDelete?.title || "Secili gorev"
-        }" kalici olarak silinecek. Bu islem geri alinamaz.`}
+          taskToDelete?.title || "Seçili görev"
+        }" kalıcı olarak silinecek. Bu işlem geri alınamaz.`}
         onConfirm={handleDeleteConfirm}
         onCancel={() => setTaskToDelete(null)}
       />
