@@ -45,7 +45,7 @@ npm run build
 
 ## Ekran Goruntusu
 
-Proje tesliminden once buraya uygulama ekran goruntusu eklenebilir.
+Proje ekran goruntusu bu bolume eklenecektir.
 
 ```text
 docs/screenshot.png
@@ -53,11 +53,11 @@ docs/screenshot.png
 
 ## GitHub Linki
 
-Repository linki buraya eklenecek.
+https://github.com/umutcn-code/javascript-staj-projesi
 
 ## Live Demo Linki
 
-Netlify veya Vercel deployment linki buraya eklenecek.
+https://enchanting-faloodeh-4e7139.netlify.app
 
 ## GitHub'a Yukleme Adimlari
 
@@ -66,7 +66,7 @@ git init
 git add .
 git commit -m "Initial TaskFlow project"
 git branch -M main
-git remote add origin https://github.com/kullanici-adi/taskflow.git
+git remote add origin https://github.com/umutcn-code/javascript-staj-projesi.git
 git push -u origin main
 ```
 
